@@ -1,0 +1,35 @@
+# Entorno y archivos temporales.
+.venv/
+work/
+outputs/
+.uv-cache/
+.ipynb_checkpoints/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.env
+.env.*
+!.env.example
+
+# Los chats y todos sus derivados son privados.
+data/raw/*
+data/interim/*
+data/processed/*
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+
+# Exportaciones o resultados colocados por error fuera de data/.
+*.zip
+*.html
+*.jsonl
+*.csv
+*.tsv
+*.parquet
+*.sqlite
+*.db
+
+# Archivos propios de Windows y editores.
+.DS_Store
+Thumbs.db
+.vscode/
